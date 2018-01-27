@@ -3,16 +3,17 @@ title: QMUS - Ukranian Society
 ---
 
 
-<nav>
-
-</nav>
-
 <main>
     <section>
         <div class="home-banner">
+            <div class="navbar-ua">
+                <%= link_to 'About us', '#', class: 'navbar-ua__link' %>
+                <%= link_to 'Our goals', '#', class: 'navbar-ua__link' %>
+                <%= link_to 'Support us', '#', class: 'navbar-ua__link' %>
+            </div>
             <div class="home-banner__content">
                 <%= image_tag "qmul-logo-white-small.png", class: "home-banner__logo"  %>
-                <h1 class="home-banner__title"> Queen Mary <span> Ukrainian Society </span> </h1>
+                <h1 class="home-banner__title">  <span class="home-banner__title-main"> Queen Mary </span>  <span class="home-banner__title-sub"> Ukrainian Society </span> </h1>
             </div>
         </div>
     </section>
