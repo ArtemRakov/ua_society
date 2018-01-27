@@ -38,3 +38,73 @@
         }
     }
 }
+
+.heading-secondary {
+        text-transform: uppercase;
+        font-size: 3.5rem;
+        font-weight: 700;
+        display: inline-block;
+        background-image: linear-gradient(to right, $color-primary-blue, $color-primary-yellow);
+        -webkit-background-clip: text;
+        color: transparent;
+        margin-bottom: 10rem;
+    }
+
+.about-us {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+
+    &__description {
+    }
+
+    &__img-h3 {
+        display: flex;
+        align-items: center;
+        // justify-content: flex-start;
+        margin-bottom: 1.5rem;
+    }   
+
+    &__h3 {
+        color: $color-grey;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 2.5rem;
+        font-size: 2.5rem;
+    }
+
+    &__text {
+        color: $color-grey;
+        font-size: $font-base;
+        font-family: $headers-font;
+    }
+
+    &__image-small {
+        width: 5rem;
+    }
+
+    &__box {
+        max-width: 119rem;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &__qmul {
+        height: 11rem;
+    }
+
+
+    &__flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item-1 {
+        flex: 0 0 50%;
+        margin-right: auto;
+    }
+}
