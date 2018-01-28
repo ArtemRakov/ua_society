@@ -1,4 +1,6 @@
 .navbar-ua {
+
+    
     height: 7rem;
     background-color: transparent;
     display: flex;
@@ -10,13 +12,19 @@
 
 
     &__link {
+    
+    &:link,
+    &:visited,
+    & {
         margin-top: 0.5rem;
         margin-right: 7rem;
         color: #fff;
         font-family: $headers-font;
         font-weight: 300;
         font-size: 1.8rem;
+        text-decoration: none;
         
+    }
         &:hover {
             border-bottom: 1px solid #fff;
             text-decoration: none;
