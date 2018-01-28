@@ -39,6 +39,15 @@
     }
 }
 
+.box {
+        max-width: 119rem;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 0;
+        padding-right: 0;
+        
+    }
+
 .heading-secondary {
         text-transform: uppercase;
         font-size: 3.5rem;
@@ -72,7 +81,7 @@
         margin-top: 0;
         margin-bottom: 0;
         margin-left: 2.5rem;
-        font-size: 2.5rem;
+        font-size: 2.0rem;
     }
 
     &__text {
@@ -82,20 +91,12 @@
     }
 
     &__image-small {
-        width: 5rem;
+        width: 4.5rem;
     }
 
-
-    &__box {
-        max-width: 119rem;
-        margin-right: auto;
-        margin-left: auto;
-        padding-left: 0;
-        padding-right: 0;
-    }
 
     &__qmul {
-        height: 11rem;
+        height: 9.5rem;
     }
 
 
@@ -123,4 +124,70 @@
     &__society {
         height: 20rem;
     }
+}
+
+.our-goals {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    background-color: #F7F7F7;
+
+
+
+}
+
+
+.card {
+    width: 60%; 
+    height: 100%;
+    padding: 5rem 3rem;
+    border-radius: 3px;
+
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+
+    
+
+    &__yellow {
+        background-color: $color-primary-yellow;
+    }
+
+    &__blue {
+        background-color: $color-primary-blue;
+    }
+
+    &__btn-like {
+        margin-top: 2.5rem;
+        padding: 1.1rem 1.7rem;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+        font-size: 1.8rem;
+        font-family: $headers-font;
+        font-weight: 400;
+    }
+
+    &__text_y {
+        color: $color-primary-yellow;
+    }
+
+    &__text_b {
+        color: $color-primary-blue;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        margin-top: 1.5rem;
+        font-family: $headers-font;
+        text-align: center;
+    }
+
+
+    &__logo {
+
+    }
+}
+
+.row-eq {
+    display: flex;
 }
