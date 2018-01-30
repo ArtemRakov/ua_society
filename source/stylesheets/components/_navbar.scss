@@ -32,3 +32,31 @@
         }
     }
 }
+
+.dropdown-toggle {
+    font-size: 3.5rem;
+    margin-right: 3rem;
+}
+
+.navbar-ua-dropdown-menu {
+    margin-right: 1rem;
+
+    font-size: 2.5rem;
+    font-family: $headers-font;
+}
+
+// .dropdown_links {
+//     padding: 2rem;
+// }
+
+
+.hide-tab {
+    @include respond(tab-port) {
+        display: none;
+    }
+}
+.show-nav-small {
+    @include respond(tab-port) {
+        display: flex !important;
+    }
+}

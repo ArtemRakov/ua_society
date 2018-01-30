@@ -37,6 +37,10 @@
             margin-top: 0.5rem;
         }
     }
+
+    @include respond(tab-port) {
+        background-position: top;
+    }
 }
 
 .box {
