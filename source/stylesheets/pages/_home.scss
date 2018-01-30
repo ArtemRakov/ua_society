@@ -49,6 +49,18 @@
         margin-left: auto;
         padding-left: 0;
         padding-right: 0;
+
+        @include respond(tab-port) {
+            width: 85%;
+        }
+
+        // @include respond() {
+            
+        // }
+
+        // @include respond() {
+            
+        // }
         
     }
 
@@ -74,7 +86,10 @@
         // justify-content: flex-start;
         // margin-bottom: 1.5rem;
         padding: 1.5rem 0;
+
     }   
+
+
 
     &__h3 {
         color: $color-grey;
@@ -107,24 +122,57 @@
         justify-content: center;
         align-items: center;
 
+
+        
         &:not(:last-child) {
             margin-bottom: 10rem;
+        }
+
+        @include respond(tab-port) {
+            flex-direction: column;
+            margin-bottom: 3rem !important;
         }
     }
 
     &__item-1 {
         flex: 0 0 50%;
         margin-right: auto;
+
+
+        @include respond(phone) {
+            flex: initial;
+        }
     }
 
     &__item-3 {
         flex: 0 0 50%;
         margin-right: auto;
+
+        @include respond(tab-port) {
+            margin-right: inherit;
+            margin-bottom: 2rem;
+        }
+
+        @include respond(phone) {
+            flex: initial;
+        }
+    }
+
+    &__item-2 {
+
+        @include respond(tab-port) {
+            order: -1;
+            margin-bottom: 2rem;
+        }
     }
 
 
     &__society {
         height: 20rem;
+
+        @include respond(tab-port) {
+            height: 15rem;
+        }
     }
 }
 
