@@ -84,6 +84,11 @@
     padding-top: 5rem;
     padding-bottom: 10rem;
 
+    @include respond(tab-port) {
+        padding-bottom: 5rem;
+
+    }
+
     &__img-h3 {
         display: flex;
         align-items: center;
