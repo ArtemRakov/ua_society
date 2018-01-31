@@ -45,9 +45,22 @@
     font-family: $headers-font;
 }
 
-// .dropdown_links {
-//     padding: 2rem;
-// }
+.dropdown__links {
+    padding-top: 0.4rem;
+    width: 100%;
+}
+
+.dropdown__list {
+    display: flex;
+    align-items: center;
+    color: $color-grey;
+}
+
+.dropdown__icon {
+    padding-right: 0.5rem;
+}
+
+
 
 
 .hide-tab {
