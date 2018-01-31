@@ -211,6 +211,15 @@
             // border: 1px solid #fff;
             transition: 0.3s all;
         }
+
+
+        @include respond(tab-port) {
+            &:link, &:visited, & {
+
+                margin-top: 5rem;
+            }
+        
+        }
     }
 
 }
@@ -229,7 +238,19 @@
 
     box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.15);
 
-    
+    @include respond(tab-land) {
+        width: 77%;
+    }
+
+    @include respond(tab-port) {
+        width: 50%;
+
+        margin-bottom: 5rem;
+    }
+
+    @include respond(phone) {
+        width: 70%;
+    }
 
     &__yellow {
         background-color: $color-primary-yellow;
@@ -269,6 +290,12 @@
 
 .row-eq {
     display: flex;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        align-items: center;
+        
+    }
 }
 
 
