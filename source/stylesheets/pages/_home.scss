@@ -206,7 +206,7 @@
         font-weight: 700;
         font-family: $headers-font;
         text-decoration: none;
-
+        outline: none;
     }
         
         &:hover {
@@ -225,6 +225,24 @@
             }
         
         }
+    }
+
+
+    &__modal {
+        width: 700px;
+
+        @include respond(tab-port) {
+            width: 600px;
+            margin: 30px auto
+        }
+
+        @include respond(phone) {
+            width: inherit;
+        }
+    }
+
+    &__modal-header {
+        border: none;
     }
 
 }
