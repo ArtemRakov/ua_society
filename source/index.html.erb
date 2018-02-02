@@ -6,10 +6,10 @@ title: QMUS - Ukranian Society
 <main>
     <section>
         <div class="home-banner">
-            <div class="navbar-ua hide-tab">
-                <%= link_to 'About us', '#', class: 'navbar-ua__link' %>
-                <%= link_to 'Our goals', '#', class: 'navbar-ua__link' %>
-                <%= link_to 'Support us', '#', class: 'navbar-ua__link' %>
+            <div class="navbar-ua hide-tab" id="navbar-bigscreen">
+                <a class="navbar-ua__link navbar-inpage" id="aboutlink"  href="#" > About us </a>
+                <a class="navbar-ua__link navbar-inpage" id="ourgoalslink"  href="#" > Our goals </a>
+                <a class="navbar-ua__link" href="#"> Support us </a>
             </div>
 
             <div class="navbar-ua show-nav-small" style="display: none;">
@@ -35,7 +35,7 @@ title: QMUS - Ukranian Society
         </div>
     </section>
 
-    <section class="about-us">
+    <section class="about-us" id="about">
         <div class="text-center">
             <h2 class="heading-secondary"> About us </h2>
         </div>
@@ -87,7 +87,7 @@ title: QMUS - Ukranian Society
         </div>
     </section>
 
-    <section class="our-goals">
+    <section class="our-goals" id="ourgoals">
         <div class="text-center">
             <h2 class="heading-secondary"> Our goals </h2>
         </div>
@@ -167,3 +167,25 @@ title: QMUS - Ukranian Society
         </div>
     </div>
 </footer>
+
+
+
+<script>
+   function goToByScroll(id) {
+        // Reove "link" from the ID
+        id = id.replace("link", "");
+        // Scroll
+        $('html,body').animate({
+            scrollTop: $("#" + id).offset().top
+        },
+            'slow');
+    }
+
+    $(".navbar-inpage").click(function (e) {
+        // Prevent a page reload when a link is pressed
+        e.preventDefault();
+        // Call the scroll function
+        goToByScroll($(this).attr("id"));
+    });
+
+</script>
