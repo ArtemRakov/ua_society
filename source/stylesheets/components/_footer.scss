@@ -86,24 +86,28 @@
                 font-size: 4rem;
             }
         }
-        
+
     }
 
 
     &__links-facebook {
         &:hover {
             color: #405993 !important;
-        }        
+        }
     }
     &__links-instagram {
         &:hover {
             color: #BE526B !important;
-        }            
+        }
     }
     &__links-linkedin {
         &:hover {
             color:  #3077B0 !important;
-        }        
+        }
+    }
+
+    &__logo {
+        height: 8rem;
     }
 }
 

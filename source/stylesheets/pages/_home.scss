@@ -1,7 +1,7 @@
 .home-banner {
     background-image: linear-gradient(right bottom, rgba(0,0,0, 0.3), rgba(0,0,0, 0.3)), url('/images/flag.jpg');
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     // display: flex;
     // justify-content: center;
     // align-items: center;
@@ -19,7 +19,8 @@
     }
 
     &__logo {
-        height: 12rem;
+        height: 8rem;
+        margin-bottom: 2rem;
     }
 
     &__title {
@@ -27,6 +28,7 @@
         font-size: 6.5rem;
         font-weight: 400;
         text-align: center;
+        font-family: $body-font;
 
         &-main {
             display: block;
@@ -59,13 +61,13 @@
         // }
 
         // @include respond() {
-            
+
         // }
 
         // @include respond() {
-            
+
         // }
-        
+
     }
 
 .heading-secondary {
@@ -96,7 +98,7 @@
         // margin-bottom: 1.5rem;
         padding: 1.5rem 0;
 
-    }   
+    }
 
 
 
@@ -132,7 +134,7 @@
         align-items: center;
 
 
-        
+
         &:not(:last-child) {
             margin-bottom: 10rem;
         }
@@ -208,7 +210,7 @@
         text-decoration: none;
         outline: none;
     }
-        
+
         &:hover {
             text-decoration: none;
             color: #fff;
@@ -223,7 +225,7 @@
 
                 margin-top: 5rem;
             }
-        
+
         }
     }
 
@@ -243,6 +245,7 @@
 
     &__modal-header {
         border: none;
+        padding: 0;
     }
 
 }
@@ -255,9 +258,19 @@
     @include respond(tab-port) {
         flex-direction: column;
         align-items: center;
-        
+
     }
 }
 
+// .modal-background-img {
+//     height: 40vh;
+//     background-image: url(/images/globe-bg.png);
+//     background-size: cover;
+// }
 
+// .modal-close {
+//     position: absolute;
+//     top: 2rem;
+//     right: 2rem;
+// }
 
